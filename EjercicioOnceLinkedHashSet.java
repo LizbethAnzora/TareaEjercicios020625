@@ -59,7 +59,7 @@ class Libro {
     }
 
     @Override
-public boolean equals(Object obj) {
+    public boolean equals(Object obj) {
     if (this == obj) return true; // Si apuntan al mismo objeto en memoria
     if (!(obj instanceof Libro)) return false; // Si no es de tipo Libro, no son iguales
 
@@ -67,10 +67,11 @@ public boolean equals(Object obj) {
     return this.id == otro.id; // Comparamos por el ID
 }
 
-@Override
-public int hashCode() {
+    @Override
+    public int hashCode() {
     return Integer.hashCode(id); // Generamos un código hash basado en el ID
 }
+
 }
    
 
